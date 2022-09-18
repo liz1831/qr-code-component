@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+* {
+  text-align: center;
+  font-size: 15px;
+  border: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: rgb(108, 165, 249);
+  background: linear-gradient(90deg, rgb(108, 165, 249) 0%, rgb(255, 255, 255) 50%, rgb(108, 165, 249) 100%);
+}
+
+a {
+  color: hsl(0deg, 0%, 100%);
+}
+a:hover {
+  color: hsl(212deg, 45%, 89%);
+  transition: 1s;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.content {
+  text-align: center;
+  margin: 3em 2em;
+  padding: 16px;
+  font-size: 15px;
+  border-radius: 25px;
+}
+.content__info {
+  align-items: center;
+}
+.content__info-code {
+  width: 220px;
+  height: auto;
+  border-radius: 25px;
+  transition: transform 1s;
+}
+.content__info-code:hover {
+  transform: scale(1.05);
+}
+@media (min-width: 1440px) {
+  .content__info-code {
+    width: 300px;
+  }
+}
+.content__info-title {
+  font-size: 20px;
+  color: hsl(218deg, 44%, 22%);
+  padding: 25px 5px 15px 5px;
+  transition: transform 2s;
+}
+.content__info-title:hover {
+  color: hsl(228deg, 45%, 44%);
+  transform: scale(1.05);
+}
+@media (min-width: 1440px) {
+  .content__info-title {
+    font-size: 25px;
+  }
+}
+.content__info-text {
+  color: hsl(220deg, 15%, 55%);
+  padding: 15px 5px 30px 5px;
+  transition: transform 2s;
+}
+.content__info-text:hover {
+  color: hsl(218deg, 44%, 22%);
+  transform: scale(1.05);
+}
+@media (min-width: 1440px) {
+  .content__info-text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 375px) {
+  .content {
+    margin: 7em 4em;
+  }
+}
+@media (min-width: 640px) {
+  .content {
+    margin: 7em 12.5em;
+  }
+}
+@media (min-width: 750px) {
+  .content {
+    margin: 7em 16.5em;
+  }
+}
+@media (min-width: 1080px) {
+  .content {
+    margin: 7em 27.5em;
+  }
+}
+@media (min-width: 1440px) {
+  .content {
+    margin: 7em 36.5em;
+  }
+}
+
+.attribution {
+  background-color: hsl(218deg, 44%, 22%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 25px 0px;
+  margin-top: 65%;
+  position: relative;
+}
+.attribution__text {
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
