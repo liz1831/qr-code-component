@@ -9,8 +9,8 @@
 }
 
 body {
-  background: rgb(108, 165, 249);
-  background: linear-gradient(90deg, rgb(108, 165, 249) 0%, rgb(255, 255, 255) 50%, rgb(108, 165, 249) 100%);
+  background: rgb(78, 161, 255) 100%;
+  padding: 25% 0;
 }
 
 a {
@@ -27,75 +27,77 @@ main {
 
 .content {
   text-align: center;
-  margin: 3em 2em;
   padding: 16px;
   font-size: 15px;
   border-radius: 25px;
+  margin: 0 10%;
 }
-.content__info {
-  align-items: center;
-}
-.content__info-code {
+.content__code {
   width: 220px;
   height: auto;
   border-radius: 25px;
   transition: transform 1s;
 }
-.content__info-code:hover {
+.content__code:hover {
   transform: scale(1.05);
 }
 @media (min-width: 1440px) {
-  .content__info-code {
+  .content__code {
     width: 300px;
   }
 }
-.content__info-title {
+.content__title {
   font-size: 20px;
   color: hsl(218deg, 44%, 22%);
   padding: 25px 5px 15px 5px;
   transition: transform 2s;
 }
-.content__info-title:hover {
+.content__title:hover {
   color: hsl(228deg, 45%, 44%);
   transform: scale(1.05);
 }
 @media (min-width: 1440px) {
-  .content__info-title {
+  .content__title {
     font-size: 25px;
   }
 }
-.content__info-text {
+.content__description {
   color: hsl(220deg, 15%, 55%);
   padding: 15px 5px 30px 5px;
   transition: transform 2s;
 }
-.content__info-text:hover {
+.content__description:hover {
   color: hsl(218deg, 44%, 22%);
   transform: scale(1.05);
 }
 @media (min-width: 1440px) {
-  .content__info-text {
+  .content__description {
     font-size: 18px;
   }
 }
 @media (min-width: 375px) {
   .content {
-    margin: 7em 4em;
+    margin: 0 15%;
   }
 }
 @media (min-width: 640px) {
   .content {
-    margin: 7em 12.5em;
+    margin: 0 30%;
   }
 }
 @media (min-width: 750px) {
   .content {
-    margin: 7em 16.5em;
+    margin: 0 33%;
   }
 }
 @media (min-width: 1080px) {
   .content {
-    margin: 7em 27.5em;
+    margin: 0 37.5%;
+  }
+}
+@media (min-width: 1200px) {
+  .content {
+    margin: 0 39%;
   }
 }
 @media (min-width: 1440px) {
@@ -104,15 +106,15 @@ main {
   }
 }
 
-.attribution {
-  background-color: hsl(218deg, 44%, 22%);
-  color: hsl(0deg, 0%, 100%);
-  padding: 25px 0px;
-  margin-top: 65%;
-  position: relative;
+/*
+.attribution{
+    background-color: $color-DarkBlue;
+    color: $color-white;
+    padding: 20px 0px;
+    &__text{
+        padding-bottom: 10px;
+    }
 }
-.attribution__text {
-  padding-bottom: 10px;
-}
+*/
 
 /*# sourceMappingURL=style.css.map */

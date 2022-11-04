@@ -4,7 +4,7 @@
 
 body{
     background: $bg-color;
-    background: $linear-gradient;
+    padding: 25% 0;
 }
 a{
     color: $color-white;
@@ -20,73 +20,73 @@ main{
 //El diseño por defecto esta adaptado para pantallas 320px
 .content{
     text-align: center;
-    margin: 3em 2em;
     padding: 16px;
     font-size: 15px;
-    border-radius: 25px;    
-    &__info{
-        align-items: center;
-        &-code{
-            width: 220px;
-            height: auto;      
-            border-radius: 25px;   
-            transition: transform 1s;
-            &:hover{
-                transform: scale(1.05);
-            }  
-            @media(min-width:1440px) {
-                width: 300px;
-            }           
+    border-radius: 25px; 
+    margin: 0 10%;
+    &__code{
+        width: 220px;
+        height: auto;      
+        border-radius: 25px;   
+        transition: transform 1s;
+        &:hover{
+            transform: scale(1.05);
+        }  
+        @media(min-width:1440px) {
+            width: 300px;
+        }           
+    }
+    &__title{
+        font-size: 20px;
+        color: $color-DarkBlue;
+        padding: 25px 5px 15px 5px;
+        transition: transform 2s;
+        &:hover{
+            color: $color-blue;
+            transform: scale(1.05);
         }
-        &-title{
-            font-size: 20px;
+        @media(min-width:1440px) {
+           font-size: 25px;
+        }     
+    }
+    &__description{
+        color: $color-GrayishBlue;
+        padding: 15px 5px 30px 5px;
+        transition: transform 2s;
+        &:hover{
             color: $color-DarkBlue;
-            padding: 25px 5px 15px 5px;
-            transition: transform 2s;
-            &:hover{
-                color: $color-blue;
-                transform: scale(1.05);
-            }
-            @media(min-width:1440px) {
-               font-size: 25px;
-            }     
+            transform: scale(1.05);
         }
-        &-text{
-            color: $color-GrayishBlue;
-            padding: 15px 5px 30px 5px;
-            transition: transform 2s;
-            &:hover{
-                color: $color-DarkBlue;
-                transform: scale(1.05);
-            }
-            @media(min-width:1440px) {
-                font-size: 18px;
-             }    
-        }
+        @media(min-width:1440px) {
+            font-size: 18px;
+        }    
     }
     @media(min-width:375px) {
-        margin: 7em 4em;
+        margin: 0 15%;
     }
     @media(min-width: 640px){
-        margin: 7em 12.5em ;
+        margin: 0 30%;
     }
     @media(min-width: 750px) {
-        margin: 7em 16.5em;
+        margin: 0 33%;
     }
     @media(min-width:1080px) {
-        margin:7em 27.5em;
+        margin: 0 37.5%;
+    }
+    @media(min-width:1200px) {
+        margin: 0 39%;
     }
     @media(min-width:1440px) {
         margin: 7em 36.5em;
     }
 }
+/*
 .attribution{
     background-color: $color-DarkBlue;
     color: $color-white;
-    padding: 25px 0px;
-    margin-top: 65%;
-    position:relative;
+    padding: 20px 0px;
     &__text{
         padding-bottom: 10px;
     }
 }
+*/
